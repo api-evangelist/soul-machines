@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.soulmachines.com/web-sdk/changelog and https://www.npmjs.com/package/@soulmachines/smwebsdk
+versioning:
+  scheme: semver
+  current: 15.8.1
+  component: "@soulmachines/smwebsdk"
+  docs: https://docs.soulmachines.com/web-sdk/changelog
+changelog: changelog/soul-machines-changelog.yml
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal published deprecation policy or RFC 8594 Sunset/Deprecation header support found; breaking changes are communicated via the semver Web SDK changelog (major version bumps).
+sla:
+  url: null
+status_page:
+  url: null
+  note: >-
+    No claimed public status page. soulmachines.statuspage.io resolves to the
+    generic Atlassian Statuspage marketing site (subdomain not provisioned), so
+    no StatusPage pointer is emitted.
+support: https://support.soulmachines.com

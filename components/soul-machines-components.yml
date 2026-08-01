@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.soulmachines.com/web-sdk/ and https://github.com/soulmachines/react-reference-ui-public
+docs: https://docs.soulmachines.com/docs/dp-components
+description: >-
+  Client-side, embeddable UI for rendering and interacting with a Soul Machines
+  Digital Person in the browser. The Web SDK renders the Digital Person video
+  scene plus supporting UI (Digital Person components), and Soul Machines
+  publishes a React reference UI as a starting template.
+families:
+- name: Web SDK Digital Person scene
+  loader: "@soulmachines/smwebsdk"
+  kind: javascript-library
+  surface: Renders the autonomously-animated Digital Person over a WebSocket session and exposes controls (speech, camera, content awareness).
+  docs: https://docs.soulmachines.com/web-sdk/
+- name: Digital Person components
+  kind: ui-components
+  surface: Prebuilt Digital Person UI components (dp-components) and guidance for building a custom UI around the Digital Person scene.
+  docs: https://docs.soulmachines.com/docs/dp-components
+- name: React Reference UI
+  kind: reference-template
+  repo: https://github.com/soulmachines/react-reference-ui-public
+  surface: Create-React-App based reference application demonstrating a full Digital Person front-end (connection, transcript, controls).

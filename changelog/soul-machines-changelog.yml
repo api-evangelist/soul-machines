@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.soulmachines.com/web-sdk/changelog
+docs: https://docs.soulmachines.com/web-sdk/changelog
+scheme: semver
+component: "@soulmachines/smwebsdk"
+current_version: 15.8.1
+note: >-
+  Soul Machines maintains a dated, per-version changelog for the Web SDK. The
+  live changelog page is the source of truth; captured here is the recent
+  version window discoverable from the docs sitemap and the npm registry.
+  Detailed per-release notes are rendered client-side on the changelog pages.
+entries:
+- version: 15.8.1
+  source: npm dist-tags latest
+- version: 15.6.0
+  url: https://docs.soulmachines.com/web-sdk/changelog/15.6.0
+- version: 15.5.0
+  url: https://docs.soulmachines.com/web-sdk/changelog/15.5.0
+- version: 15.4.0
+  url: https://docs.soulmachines.com/web-sdk/changelog/15.4.0
+- version: 15.3.0
+  url: https://docs.soulmachines.com/web-sdk/changelog/15.3.0
+- version: 15.2.0
+  url: https://docs.soulmachines.com/web-sdk/changelog/15.2.0
+- version: 15.1.0
+  url: https://docs.soulmachines.com/web-sdk/changelog/15.1.0

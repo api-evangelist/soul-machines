@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/org/soulmachines and https://pypi.org/user/soulmachines
+packages:
+- language: javascript
+  registry: npm
+  name: "@soulmachines/smwebsdk"
+  version: 15.8.1
+  url: https://www.npmjs.com/package/@soulmachines/smwebsdk
+  install: npm install @soulmachines/smwebsdk
+  official: true
+  description: Soul Machines Web SDK for presenting and interacting with Digital People in a web page or front-end JavaScript application.
+- language: javascript
+  registry: npm
+  name: "@soulmachines/smskillsdk"
+  version: 1.4.0-rc.0
+  url: https://www.npmjs.com/package/@soulmachines/smskillsdk
+  install: npm install @soulmachines/smskillsdk
+  official: true
+  source_repo: https://github.com/soulmachines/smskillsdk-node
+  description: NodeJS package for the Soul Machines Skill API.
+- language: python
+  registry: pypi
+  name: smskillsdk
+  version: 1.0.0
+  url: https://pypi.org/project/smskillsdk/
+  install: pip install smskillsdk
+  official: true
+  publisher: Soul Machines Ltd
+  description: Python package to assist with developing services conforming to the Soul Machines Skill REST API.

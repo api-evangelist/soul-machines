@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://www.soulmachines.com/llms.txt
+server:
+  name: soul-machines-site
+  transport: http
+  url: https://www.soulmachines.com/_api/mcp
+  auth: none
+  note: >-
+    Official hosted MCP endpoint for the Soul Machines marketing site, powered
+    by the Wix Site MCP. Exposes live public site content and commerce actions
+    to AI agents (no scraping). This is the site/content MCP, not an MCP for the
+    Digital Person developer platform (Web SDK / Skills API), which ships no
+    hosted MCP server. No authentication required; only public site information
+    is accessible.
+  docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+tools:
+- name: GetBusinessDetails
+  description: Retrieves business and site details such as timezone, email, phone, and address.
+- name: SearchInSite
+  description: Searches the site for information.
+- name: SearchSiteApiDocs
+  description: Retrieves API documentation for the Wix business solutions installed on the site.
+- name: GenerateVisitorToken
+  description: Creates a new visitor session and obtains a visitor access token for the site.
+- name: CallWixSiteAPI
+  description: Calls API methods on the site to perform actions on a visitor's behalf (query data, book, purchase).
+- name: ReadFullDocsArticle
+  description: Fetches a complete article from the Wix developer documentation portal.
+- name: ReadFullDocsMethodSchema
+  description: Fetches the full schema for a Wix API method.

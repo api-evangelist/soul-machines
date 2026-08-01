@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.soulmachines.com/docs/websocket-message-formats and https://docs.soulmachines.com/web-sdk/
+docs: https://docs.soulmachines.com/docs/websocket-message-formats
+authentication:
+  style: api-key-or-jwt
+  detail: See authentication/soul-machines-authentication.yml (API key or token-server JWT).
+transport:
+  web_sdk: WebSocket (real-time bidirectional) to the dh.soulmachines.cloud session server
+  skills_api: HTTP/REST callbacks (request/response) from the Digital Person to a developer-hosted skill service
+message_protocol:
+  format: JSON messages over the persona WebSocket
+  categories:
+    - conversation (user speech in / Digital Person speech out)
+    - animation and camera control (e.g. animateToNamedCamera)
+    - content awareness / scene state
+    - connection state (currentStep / percentageLoaded / totalSteps)
+  reference: https://docs.soulmachines.com/docs/websocket-message-formats
+session_lifecycle:
+  states: [connecting, connected, disconnected]
+  connection_state_updates: onConnectionStateUpdated with progress (percentageLoaded, currentStep, totalSteps)
+idempotency:
+  supported: false
+  note: No idempotency-key contract is documented; session/message protocol is stateful and real-time rather than idempotent request-based.
+pagination:
+  supported: false
+  note: Not applicable to the WebSocket session protocol.
+versioning:
+  scheme: semver
+  detail: SDK packages are versioned with semantic versioning; see lifecycle/ and changelog/.
+error_handling:
+  web_sdk: Errors and disconnects surfaced through connection-state callbacks.
+  skills_api: Skill services return structured skill responses; see skills-api api-reference.
+cross_links:
+  authentication: authentication/soul-machines-authentication.yml
+  lifecycle: lifecycle/soul-machines-lifecycle.yml
+  changelog: changelog/soul-machines-changelog.yml
+  webhooks: asyncapi/soul-machines-skills-webhooks.yml

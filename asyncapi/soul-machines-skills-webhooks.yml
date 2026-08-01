@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.soulmachines.com/skills-api/ and https://docs.soulmachines.com/docs/websocket-message-formats
+spec_type: Webhooks
+docs: https://docs.soulmachines.com/skills-api/api-reference/skill-definition
+description: >-
+  Soul Machines exposes an event/callback surface rather than an outbound
+  webhook-subscription product: a Digital Person session drives a real-time
+  message protocol over WebSocket (Web SDK), and the Skills API invokes
+  developer-hosted skill web services as HTTP callbacks whenever conversational
+  input needs a response. Both are captured here as the provider's event
+  surface. Soul Machines publishes a Skills API reference (including an
+  async-api reference page) and websocket message-format docs; no downloadable
+  AsyncAPI document was found published, so this artifact catalogs the surface
+  rather than embedding a spec.
+event_surfaces:
+- name: Skills API callbacks
+  kind: http-callback
+  direction: soulmachines-to-developer-service
+  description: >-
+    The Digital Person / orchestration layer calls a developer-registered skill
+    service to obtain conversational responses. Skill types include NLP-adapter,
+    default intent match, default custom match, default fallback match, base
+    corpus, and pre/post/pre-post processing stages.
+  reference:
+    - https://docs.soulmachines.com/skills-api/getting-started/skill-types
+    - https://docs.soulmachines.com/skills-api/api-reference/async-api
+    - https://docs.soulmachines.com/skills-api/api-reference/skill-definition
+  sdks:
+    - "@soulmachines/smskillsdk (Node)"
+    - smskillsdk (Python)
+- name: Digital Person session messages
+  kind: websocket-messages
+  direction: bidirectional
+  description: >-
+    Real-time JSON messages between the Web SDK client and the session server
+    covering conversation, animation/camera, content awareness, and connection
+    state.
+  reference:
+    - https://docs.soulmachines.com/docs/websocket-message-formats
