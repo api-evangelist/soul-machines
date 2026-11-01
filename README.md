@@ -64,6 +64,116 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Soul Machines is a company surfaced as a portfolio company of softbank-vision-fund and added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment pipeline.
+Soul Machines builds autonomously animated "Digital People" — AI-driven interactive avatars that combine a real-time facial/gesture animation engine with conversational AI so brands can deploy human-like agents for customer experience, sales, education, and health. Developers integrate Digital People through the Web SDK (a JavaScript library that renders and drives a Digital Person in the browser over a WebSocket session to the dh.soulmachines.cloud session server) and the Skills API (a REST/callback contract for building web services that supply the conversational responses a Digital Person speaks). Personas, API keys, and content are configured in DDNA Studio. Soul Machines was founded in Auckland, New Zealand and is a portfolio company of the SoftBank Vision Fund.
 
-Backed by: softbank-vision-fund
+**Areas:** Company · Enterprise · Artificial Intelligence · Digital Humans · Avatars · Conversational AI · Customer Experience · SDK · Web SDK
+
+## Soul Machines on APIs.io
+
+Everything profiled for Soul Machines is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/soul-machines/](https://apis.io/providers/soul-machines/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Soul Machines Digital Person Session](https://apis.io/apis/soul-machines/soul-machines-digital-person-session/) — Real-time WebSocket session API used by the Web SDK to connect a browser client to a Digital Person running on the Soul Machines session server. A session…
+- [Soul Machines Skills API](https://apis.io/apis/soul-machines/soul-machines-skills-api/) — REST/callback contract for building web services ("skills") that respond to a Digital Person's conversational user input — NLP-adapter skills, intent…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Soul Machines Skills Webhooks](https://apis.io/asyncapis/soul-machines/soul-machines-skills-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [soul-machines-site](https://apis.io/servers/soul-machines/soul-machines-site/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Soul Machines Authentication](https://apis.io/security/soul-machines/soul-machines-authentication/)
+- [Soul Machines Domain Security](https://apis.io/security/soul-machines/soul-machines-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Soul Machines Plans Pricing](https://apis.io/plans/soul-machines/soul-machines-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.soulmachines.com)
+- [Documentation](https://docs.soulmachines.com/docs/)
+- [Getting started](https://docs.soulmachines.com/web-sdk/)
+- [API reference](https://docs.soulmachines.com/web-sdk/api/)
+- [Pricing](https://www.soulmachines.com/studio-pricing)
+- [Sign up](https://workforce.soulmachines.com/auth/signup)
+- [Support](https://support.soulmachines.com)
+- [Compliance](https://www.soulmachines.com/trust-safety)
+- [Trust centre](https://www.soulmachines.com/trust-safety)
+- [Terms of service](https://www.soulmachines.com/terms-conditions)
+- [Privacy policy](https://www.soulmachines.com/privacy-policy)
+- [GitHub](https://github.com/soulmachines)
+
+## API Evangelist rating
+
+**Kin Score 41.9** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 78.9 |
+
+**Agent readiness 21.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 22.7** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/soul-machines/](https://apis.io/providers/soul-machines/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Soul Machines: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/soul-machines/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
